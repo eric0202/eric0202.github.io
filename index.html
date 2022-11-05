@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>何文鹏个人简历</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+              <img src="./assets/images/avatar.jpg" style="width:120px;">
+
+
+                <h1 class="name">何文鹏</h1>
+                <h4 class="info-job">应用开发工程师 /c++ qt</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                   <li>
+                       <label>教育经历</label>
+                       <span>福建师范大学 本科 2019-2023</span>
+                   </li>
+                    <li>
+                        <label>个人信息</label>
+                        <span>何文鹏 / 男</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-6 /540</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15683792347" target="_blank">15683792347</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="eric.h@88.com" target="_blank">eric.h@88.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="eric0202.github.io" target="_blank">eric0202.github.io</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/" target="_blank">github.com/eric0202</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>QT</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>C++</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>英文交流</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Linux</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Shell</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>安卓</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Makefile</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Python</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="./assets/images/qrcode.png" style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>客户端</label>
+                            <span>qt designer、qss、微信小程序、安卓layout、javaScript</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="main">
+
+
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>实习经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>宏泰集团(厦门)有限公司－Linux软件工程师</span>
+                            <time>2022.7 至 2022.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>用<mark>C++</mark>, <mark>python</mark> 和 <mark>qt</mark> 编写客户端软件, qmake管理和交叉编译部署.</li>
+                            <li>对远程桌面协议研究和相关客户端服务端 github 开源软件解析 , 二次封装 . 如 : <mark>spice</mark>
+                              ( virt-manager , virt-viewer ) , <mark>vnc</mark> ( vnc viewer , tiger vnc , turbo vnc ) ,
+                              <mark>rdp</mark> ( xrdp , remmina , freerdp-x11 , freerdp-wayland ) .</li>
+                            <li>用<mark>qt</mark> 编写一体机需要的功能模块 . 如一体机关机按钮功能和相关的ui .
+                              用qt designer 对已有代码重构 , 实现ui文件和逻辑代码分离 .  </li>
+                            <li>竞品破解和逆向分析反编译. </li>
+                            <li>Linux显示协议的研究 , 技术选型和应用 ,
+                              如 <mark>x11 server</mark>, <mark>wayland</mark> . </li>
+                            <li>对客户端和模块软件实现apt 标准化管理 . 包括 , 搭建内网
+                              <mark>apache2 apt</mark> 服务器 .搭建和使用团队gitlab, svn web平台. <br/></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]虚拟化远程桌面瘦客户机  ( 一体机电脑)</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2022.7 - 持续更新</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：Linux C++ Python QT Shell</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标] 将低成本低性能的arm linux开发板作为一体机电脑, 流畅运行x86 windows和linux系统,
+                                并且通过登陆, 一台开发板一体机可以运行不同用户的不同电脑.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]个人
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]完成从
+                                <mark>"设计-技术选型-实现-部署-文档"</mark>等所有工作
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [说明]
+                                <br/>
+                                服务器: 采用centos8, <mark>qemu</mark>虚拟化桌面系统, 搭建了<mark>rdp</mark>, <mark>spice</mark>,
+                                <mark>vnc</mark>等远程桌面服务端, <mark>apache2 http</mark>服务器(用于apt源更新). </li>
+                                客户端: 使用<mark>arm linux</mark>开发板接屏幕. 采用<mark>c++和qt</mark>的技术, qt designer绘制自适应布局,
+                                qss用于页面样式和美化. 期间个人使用 shell, python 和 C++ 开发了多个带复杂启动参数的软件来使开发过程更简单高效.
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]字节跳动青训营抖音项目</span>
+                            <span class="link">
+                                <a href="https://nje8ca65uz.feishu.cn/docx/doxcnckvDvaYMrJX1qRI1X1oQjh" target="_blank">Demo</a>
+                            </span>
+                            <time>2022.7-2022.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：安卓 java retrofit room-database glide</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现一个接近手机抖音的客户端,可以通过手机抖音或web授权登陆,实现查看粉丝,关注,
+                                个人视频. 展示抖音电视剧,电影,综艺的当前榜单和历史榜单等
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与 2 位同学 字节跳动第四届安卓青训营byte组
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]个人实现了从lottie->授权登陆->获取个人信息,粉丝,关注->数据库保存->ui展示 的工作.
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [说明]实现了用opendouyin api调起抖音申请accessToken获取个人信息以及粉丝和关注信息等,
+                                网络使用了<mark>retrofit+rxjava</mark>
+                                通过<mark>room database</mark>保存所获取到的信息,并展示在ui界面,图片加载采用了glide模块.
+                                以及调用本机图库更换背景,lottie动画等等.
+                                <br/>
+                                项目地址: <a href="https://github.com/eric0202/DouYin" target="_blank">Github</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <p>[技术]热爱研究探索新技术,把工作当成爱好,下班也不会停止在网络上学习,从学习探索中获取快乐.有github开源项目单个万行<br/>
+                  [生活]热爱健身,羽毛球对生活充满希望.羽毛球进入过院队(替补哈哈),在商业健身房当过健身私教.<br/>
+                  [态度]热爱奉献,在校医院做过志愿者队长.献血1200cc.<br/>
+                  [能力]进步迅速,学习能力强,珍惜时间,喜欢让自己忙起来.<br/>
+                  [英语]由外国朋友可以英语轻松交流,组建过英文字幕组翻译英语教学视频
+                </p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <!-- 侧栏 -->
+    <aside>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
